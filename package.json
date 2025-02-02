@@ -1,0 +1,16 @@
+{
+  "name": "@nextad/openrtb",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kai Miyamoto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nextadjs/openrtb.git"
+  },
+  "bugs": "https://github.com/nextadjs/openrtb.git"
+}
