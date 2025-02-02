@@ -3,8 +3,24 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "test": "vitest"
   },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      "./bid-requester": {
+        "import": "./dist/bid-requester/index.mjs",
+        "require": "./dist/bid-requester/index.js",
+        "types": "./dist/bid-requester/index.d.ts"
+      }
+    }
+  },
+  "files": [
+    "./dist",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [],
   "author": "Kai Miyamoto",
   "license": "MIT",
@@ -12,5 +28,15 @@
     "type": "git",
     "url": "https://github.com/nextadjs/openrtb.git"
   },
-  "bugs": "https://github.com/nextadjs/openrtb.git"
+  "bugs": "https://github.com/nextadjs/openrtb.git",
+  "peerDependencies": {
+    "iab-openrtb": "^latest"
+  },
+  "devDependencies": {
+    "@nextad/faker": "^0.6.8",
+    "@types/node": "^22.13.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.4"
+  }
 }
