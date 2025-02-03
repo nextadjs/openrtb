@@ -39,6 +39,11 @@
         "import": "./dist/macro-replacer/index.mjs",
         "require": "./dist/macro-replacer/index.js",
         "types": "./dist/macro-replacer/index.d.ts"
+      },
+      "./auction": {
+        "import": "./dist/auction/index.mjs",
+        "require": "./dist/auction/index.js",
+        "types": "./dist/auction/index.d.ts"
       }
     }
   },

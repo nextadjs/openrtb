@@ -12,6 +12,7 @@ export default defineConfig({
     "src/builder/v26/index.ts",
     "src/schema/index.ts",
     "src/schema/v26/index.ts",
-    "src/macro-replacer/index.ts"
+    "src/macro-replacer/index.ts",
+    "src/auction/index.ts"
   ],
 });
