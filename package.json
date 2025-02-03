@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "tsup",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "tsc --noEmit"
   },
   "publishConfig": {
     "access": "public",
