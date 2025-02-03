@@ -34,6 +34,11 @@
         "import": "./dist/schema/v26/index.mjs",
         "require": "./dist/schema/v26/index.js",
         "types": "./dist/schema/v26/index.d.ts"
+      },
+      "./macro-replacer": {
+        "import": "./dist/macro-replacer/index.mjs",
+        "require": "./dist/macro-replacer/index.js",
+        "types": "./dist/macro-replacer/index.d.ts"
       }
     }
   },
