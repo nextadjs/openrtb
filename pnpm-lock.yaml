@@ -9,8 +9,11 @@ importers:
   .:
     dependencies:
       iab-openrtb:
-        specifier: ^0.4.3
+        specifier: ^latest
         version: 0.4.3
+      uuid:
+        specifier: ^11.0.5
+        version: 11.0.5
     devDependencies:
       '@nextad/faker':
         specifier: ^0.6.8

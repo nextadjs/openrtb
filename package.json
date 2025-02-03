@@ -13,6 +13,16 @@
         "import": "./dist/bid-requester/index.mjs",
         "require": "./dist/bid-requester/index.js",
         "types": "./dist/bid-requester/index.d.ts"
+      },
+      "./builder": {
+        "import": "./dist/builder/index.mjs",
+        "require": "./dist/builder/index.js",
+        "types": "./dist/builder/index.d.ts"
+      },
+      "./builder/v26": {
+        "import": "./dist/builder/v26/index.mjs",
+        "require": "./dist/builder/v26/index.js",
+        "types": "./dist/builder/v26/index.d.ts"
       }
     }
   },
@@ -38,5 +48,8 @@
     "tsup": "^8.3.6",
     "typescript": "^5.7.3",
     "vitest": "^3.0.4"
+  },
+  "dependencies": {
+    "uuid": "^11.0.5"
   }
 }
