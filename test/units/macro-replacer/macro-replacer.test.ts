@@ -64,6 +64,13 @@ describe("MacroReplacer", () => {
       expect(result).toBe("ID: 123");
     });
 
+    it('replaces macro in specified context', () => {
+      const sut = new MacroReplacer();
+      const result = sut.replace("ID: ${OPENRTB_ID}", { id: "12"});
+
+      expect(result).toBe("ID: 12");
+    }); 
+
     it("replaces multiple macros in text", () => {
       const sut = new MacroReplacer({
         id: "123",

@@ -89,11 +89,11 @@ export class MacroReplacer {
   /**
    * Replace macros in the input string
    */
-  public replace(input: string): string {
+  public replace(input: string, context?: Partial<MacroContext>): string {
     let result = input;
     for (const [macro, replacer] of this.macroMap) {
       try {
-        const value = replacer(this.context);
+        const value = replacer({ ...this.context, ...context });
         result = result.replace(
           new RegExp(macro.replace(/\$/g, "\\$"), "g"),
           value
