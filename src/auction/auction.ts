@@ -90,7 +90,11 @@ export class Auction {
 
     for (const [id, bid] of this.bids) {
       if (id !== this.winner.id && bid.lurl) {
-        const processedUrl = this.macroReplacer.replace(bid.lurl, macroContext);
+        const processedUrl = this.macroReplacer.replace(bid.lurl, {
+          ...macroContext,
+          itemId: bid.impid,
+          seatId: this.bidInfo.get(bid)?.seat
+        });
         this.sendLossNotification(processedUrl);
       }
     }
