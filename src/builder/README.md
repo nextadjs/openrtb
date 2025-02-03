@@ -1,4 +1,4 @@
-# @nextad/builder
+# @nextad/openrtb/builder
 
 A TypeScript-enabled builder library for constructing OpenRTB 2.6 bid requests and responses.
 
