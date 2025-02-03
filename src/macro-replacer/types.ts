@@ -9,7 +9,7 @@ export interface MacroContext {
   price?: number; // Common price
   currency?: string; // Common currency
   mbr?: number; // Common market bid ratio
-  loss?: string; // Common loss reason
+  loss?: number; // Common loss reason
   minToWin?: number; // Common minimum to win
 
   // Version specific fields
