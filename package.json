@@ -24,6 +24,16 @@
         "import": "./dist/builder/v26/index.mjs",
         "require": "./dist/builder/v26/index.js",
         "types": "./dist/builder/v26/index.d.ts"
+      },
+      "./schema": {
+        "import": "./dist/schema/index.mjs",
+        "require": "./dist/schema/index.js",
+        "types": "./dist/schema/index.d.ts"
+      },
+      "./schema/v26": {
+        "import": "./dist/schema/v26/index.mjs",
+        "require": "./dist/schema/v26/index.js",
+        "types": "./dist/schema/v26/index.d.ts"
       }
     }
   },
@@ -41,7 +51,14 @@
   },
   "bugs": "https://github.com/nextadjs/openrtb.git",
   "peerDependencies": {
-    "iab-openrtb": "^latest"
+    "iab-openrtb": "^latest",
+    "iab-adcom": "^0.2.8",
+    "zod": "^3"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@nextad/faker": "^0.6.8",

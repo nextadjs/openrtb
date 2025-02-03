@@ -10,5 +10,7 @@ export default defineConfig({
     "src/bid-requester/index.ts",
     "src/builder/index.ts",
     "src/builder/v26/index.ts",
+    "src/schema/index.ts",
+    "src/schema/v26/index.ts"
   ],
 });
