@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       iab-adcom:
-        specifier: ^0.2.8
-        version: 0.2.8
+        specifier: ^1.0.0
+        version: 1.0.0
       iab-openrtb:
-        specifier: ^latest
-        version: 0.4.3
+        specifier: ^1.0.0
+        version: 1.0.0
       uuid:
         specifier: ^11.0.5
         version: 11.0.5
@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@nextad/faker':
         specifier: ^0.6.8
-        version: 0.6.8(@nextad/builder@0.1.8(iab-openrtb@0.4.3))(iab-adcom@0.2.8)(iab-native@0.5.3)(iab-openrtb@0.4.3)
+        version: 0.6.8(@nextad/builder@0.1.8(iab-openrtb@1.0.0))(iab-adcom@1.0.0)(iab-native@0.5.3)(iab-openrtb@1.0.0)
       '@types/node':
         specifier: ^22.13.0
         version: 22.13.0
@@ -486,16 +486,16 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
-  iab-adcom@0.2.8:
-    resolution: {integrity: sha512-NrVXWMSUIGweUic9C2B+0oSESsLPKOPZG1s5BDQtyuw8HHVdoBVTus3HF87xz2IOhf+G59ZZiEZAQanXB5G5mw==}
+  iab-adcom@1.0.0:
+    resolution: {integrity: sha512-4X20M9nZrdSv6vJ0nHJxYZi3Kh2su8Gc1w+n3yPcOdHnAdhJ2yBwXhg3asCoPtPg6uCzqvPAnq/iDiptI+LwUw==}
     engines: {node: '>=14.0.0'}
 
   iab-native@0.5.3:
     resolution: {integrity: sha512-L0V57j+JNa2HDJwYaTPVsYtWqdIgZ3LXg9+2fPXZa7KFzcs0PLUz1oOfNsDwvLT8yG+iog+Rtu+dfti+KtEfOg==}
     engines: {node: '>=14.0.0'}
 
-  iab-openrtb@0.4.3:
-    resolution: {integrity: sha512-aPfAS8Bp5Zx3lQzCHEj6Okr51DSoROBXoEpfJz1F6ipBJR17P0+V72fc5Ko7K5UUafUlZnXEKPf/UZx9GU0qxw==}
+  iab-openrtb@1.0.0:
+    resolution: {integrity: sha512-Pcs9wl4Jg5tDFPFi3IcAskaLbTjSHaVdlvWDVZkwfqVtqHSaF8i+4DoE14AOhBERLLy0p69AcWMHycFSHRxg/g==}
     engines: {node: '>=14.0.0'}
 
   is-fullwidth-code-point@3.0.0:
@@ -949,17 +949,17 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@nextad/builder@0.1.8(iab-openrtb@0.4.3)':
+  '@nextad/builder@0.1.8(iab-openrtb@1.0.0)':
     dependencies:
-      iab-openrtb: 0.4.3
+      iab-openrtb: 1.0.0
       uuid: 11.0.5
 
-  '@nextad/faker@0.6.8(@nextad/builder@0.1.8(iab-openrtb@0.4.3))(iab-adcom@0.2.8)(iab-native@0.5.3)(iab-openrtb@0.4.3)':
+  '@nextad/faker@0.6.8(@nextad/builder@0.1.8(iab-openrtb@1.0.0))(iab-adcom@1.0.0)(iab-native@0.5.3)(iab-openrtb@1.0.0)':
     dependencies:
-      '@nextad/builder': 0.1.8(iab-openrtb@0.4.3)
-      iab-adcom: 0.2.8
+      '@nextad/builder': 0.1.8(iab-openrtb@1.0.0)
+      iab-adcom: 1.0.0
       iab-native: 0.5.3
-      iab-openrtb: 0.4.3
+      iab-openrtb: 1.0.0
       uuid: 11.0.5
 
   '@pkgjs/parseargs@0.11.0':
@@ -1194,13 +1194,13 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
-  iab-adcom@0.2.8: {}
+  iab-adcom@1.0.0: {}
 
   iab-native@0.5.3: {}
 
-  iab-openrtb@0.4.3:
+  iab-openrtb@1.0.0:
     dependencies:
-      iab-adcom: 0.2.8
+      iab-adcom: 1.0.0
 
   is-fullwidth-code-point@3.0.0: {}
 
